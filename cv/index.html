@@ -177,7 +177,10 @@ jQuery(document).ready(function($) {
                 term.echo("Smile!");
                 break;
                 
-
+            case '':
+                term.echo("Available commands are: whois, about, skills, help, social, languages, tools, projects")
+                break;
+                
             default: 
                 term.echo("unknow command " + command);
         }
@@ -187,7 +190,7 @@ jQuery(document).ready(function($) {
         "\n\n" +
         "If you would like the more 'normal'"+ 
         "\n" +
-        "version head over to http://http://dolbager.github.io/" +
+        "version head over to https://dolbager.github.io/" +
         "\n\n" +
         "Type 'help' to get a list of commands",
         onBlur: function() {
