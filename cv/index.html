@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mike Storcheous - System Engineer & Backend Developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mike Storcheous, System Engineer & Backend developer, Linux Administrator, Python & Ruby Developer">
+    <meta name="author" content="Mike Storcheous">    
+    <meta property="og:title" content="Mike Storcheous - Portfolio" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://dolbager.github.io/" />
+    <meta property="og:image" content="" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mousewheel-min.js"></script>
+    <script src="js/jquery.terminal-min.js"></script>
+    <link href="css/jquery.terminal.css" rel="stylesheet"/>
+    <style> 
+        body {
+            width: 800px;
+            font-size: 18px;
+        }
+    </style>
+  </head>
+<body>
+
+<script>
+jQuery(document).ready(function($) {
+    $('body').terminal(function(command, term) {
+        commands = command.split(/[ ]+/);
+
+        switch(commands[0]) {
+            case 'whois':
+                var whois = "Name: \t\t\tMike Storcheous\n" +
+                "Email: \t\t   dolbager@gmail.com\n" +
+                "Location: \t\tKyev\n" +
+                "Profession: \t  System Administrator & DevOps\n" +
+                "Homepage: \t\thttp://dolbager.github.io/\n";
+                term.echo(whois);
+                break;
+            case 'about': 
+                var about = "I work as a system engineer and backend developer.    I am specialized in building high performance  and  highly availabe infrastructures and I am a lover of  fast and simple systems. My current interests are  automation, IoT, databases(SQL, NoSQL) and workflow  simplification and optimization";
+                term.echo(about);
+                break;
+            case 'social':
+                
+                    term.echo("Twitter: https://twitter.com/Dolbager");
+                
+
+                
+                    term.echo("G+: https://plus.google.com/+MikeStorcheous/about");
+                
+
+                
+                    term.echo("LinkedIn: https://ua.linkedin.com/pub/mike-storcheous/74/5b2/435");
+                
+
+                
+                    term.echo("GitHub: https://github.com/Dolbager");
+                
+                break;
+                
+            case 'skills':
+                
+                    var stars_length = Math.round(100 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Linux --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(90 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Automation --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(80 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Database Administrator --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(60 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Python --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(50 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Ruby/Rails --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(40 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Golang --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(80 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Networking, VPN, routing --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(100 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Shell scripting --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(100 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Monitoring (zabbix, nagios, etc...) --> " + stars_filled + stars_blank);
+                
+                    var stars_length = Math.round(100 / 20);
+                    var stars_filled = Array(stars_length + 1).join("&#9733;")
+                    var stars_blank= Array(6 - stars_length).join("&#9734;")
+                    term.echo("Clusters, Virtualization, Cloud --> " + stars_filled + stars_blank);
+                
+                break;
+            
+            case 'languages':
+                
+                    term.echo("Russian - Native Speaker");
+                
+                    term.echo("English - Rather Fluent");
+                
+                break;
+            case 'tools':
+                
+                    term.echo("&#128295; vim");
+                
+                    term.echo("&#128295; tmux");
+                
+                    term.echo("&#128295; emacs");
+                
+                    term.echo("&#128295; git");
+                
+                    term.echo("&#128295; ansible");
+                
+                    term.echo("&#128295; chef");
+                
+                    term.echo("&#128295; puppet");
+                
+                    term.echo("&#128295; nginx");
+                
+                    term.echo("&#128295; python");
+                
+                    term.echo("&#128295; ruby");
+                
+                    term.echo("&#128295; gentoo");
+                
+                    term.echo("&#128295; OSX");
+                
+                break;
+
+            case 'projects':
+                
+                    term.echo("iteam.ua");
+                    term.echo("ISP iteam");
+                    term.echo("-----------------------");
+                
+                break;
+
+
+            case 'help':
+                term.echo("Available commands are: whois, about, skills, help, social, languages, tools, projects")
+                break;
+            
+            case 'docker':
+                term.echo("You can't get twitter followers or github stars here ;)");
+                break;
+
+            case 'vim':
+                term.echo("I love it too, but sadly it's not available here :(");
+                break;
+
+            case ':(':
+                term.echo("Smile!");
+                break;
+                
+
+            default: 
+                term.echo("unknow command " + command);
+        }
+    }, {
+        prompt: '~ > ',
+        greetings: "Welcome to the command line CV of Mike Storcheous" +
+        "\n\n" +
+        "If you would like the more 'normal'"+ 
+        "\n" +
+        "version head over to http://http://dolbager.github.io/" +
+        "\n\n" +
+        "Type 'help' to get a list of commands",
+        onBlur: function() {
+            return false;
+        }
+    });
+});
+
+</script>
+</body>
