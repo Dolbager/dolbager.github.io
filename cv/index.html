@@ -166,7 +166,7 @@ jQuery(document).ready(function($) {
                 break;
             
             case 'docker':
-                term.echo("You can't get twitter followers or github stars here ;)");
+                term.echo("yes, i now how it works...");
                 break;
 
             case 'vim':
@@ -185,12 +185,8 @@ jQuery(document).ready(function($) {
                 term.echo("unknow command " + command);
         }
     }, {
-        prompt: '~ > ',
+        prompt: 'root@localhost:~# ',
         greetings: "Welcome to the command line CV of Mike Storcheous" +
-        "\n\n" +
-        "If you would like the more 'normal'"+ 
-        "\n" +
-        "version head over to https://dolbager.github.io/" +
         "\n\n" +
         "Type 'help' to get a list of commands",
         onBlur: function() {
